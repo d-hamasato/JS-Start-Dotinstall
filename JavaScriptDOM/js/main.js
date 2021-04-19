@@ -104,11 +104,119 @@
 // }
 
 // #12
-{
-  document.querySelector('button').addEventListener('click', () => {
-    const item1 = document.querySelectorAll('li')[1];
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const item1 = document.querySelectorAll('li')[1];
 
-    // item1.remove();
-    document.querySelector('ul').removeChild(item1);
+//     // item1.remove();
+//     document.querySelector('ul').removeChild(item1);
+//   });
+// }
+
+// #13
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const li = document.createElement('li');
+//     const text = document.querySelector('input');
+//     li.textContent = text.value;
+//     document.querySelector('ul').appendChild(li);
+
+//     text.value = '';
+//     text.focus();
+//   });
+// }
+
+// ＃14
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const li = document.createElement('li');
+//     const color = document.querySelector('select');
+//     li.textContent = `${color.value} - ${color.selectedIndex}`;
+//     document.querySelector('ul').appendChild(li);
+//   });
+// }
+
+// #15, 16
+// {
+//   document.querySelector('button').addEventListener('click', () => {
+//     const colors = document.querySelectorAll('input');
+//     let selectedColor;
+
+//     colors.forEach(color => {
+//       if (color.checked === true) {
+//         selectedColor = color.value;
+//       }
+//     });
+
+//     const li = document.createElement('li');
+//     li.textContent = selectedColor;
+//     document.querySelector('ul').appendChild(li);
+//   });
+// }
+
+// #17
+// {
+//   document.querySelector('button').addEventListener('dblclick', () => {
+//     console.log('Double Clicked!');
+//   });
+
+//   document.addEventListener('mousemove', () => {
+//     console.log('moved!');
+//   });
+// }
+
+// #18
+// {
+//   document.querySelector('button').addEventListener('dblclick', () => {
+//     console.log('Double Clicked!');
+//   });
+
+//   // document.addEventListener('mousemove', e => {
+//   //   // console.log('moved!');
+//   //   console.log(e.clientX, e.clientY);
+//   // });
+
+//   document.addEventListener('keydown', e => {
+//     console.log(e.key);
+//   });
+// }
+
+// #19
+// {
+//   const text = document.querySelector('textarea');
+
+//   // text.addEventListener('focus', () => {
+//   //   console.log('focus');
+//   // });
+
+//   // text.addEventListener('blur', () => {
+//   //   console.log('blur');
+//   // });
+
+//   text.addEventListener('input', () => {
+//     // console.log('input');
+//     console.log(text.value.length);
+//   });
+
+//   text.addEventListener('change', () => {
+//     console.log('change');
+//   });
+// }
+
+// #20
+// {
+//   document.querySelector('form').addEventListener('submit', e => {
+//     e.preventDefault();
+//     console.log('submit');
+//   });
+// }
+
+// #21
+{
+  document.querySelector('ul').addEventListener('click', e => {
+    console.log(e.currentTarget);
+    // if (e.target.nodeName === 'LI') {
+    //   e.target.classList.toggle('done');
+    // }
   });
 }

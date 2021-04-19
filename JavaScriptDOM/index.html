@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>JavaScript Basics</title>
+  <style>
+    li {
+      cursor: pointer;
+    }
+    .done {
+      text-decoration: line-through;
+    }
+  </style>
 </head>
 <body>
-  <button>Run</button>
-
-  <ul>
-    <li>item 0</li>
-    <li>item 1</li>
-    <li>item 2</li>
+  <ul> <!-- e.currentTarget -->
+    <li>Todo</li>
+    <li>Todo</li> <!-- e.target -->
+    <li>Todo</li>
   </ul>
 
   <script src="js/main.js"></script>
